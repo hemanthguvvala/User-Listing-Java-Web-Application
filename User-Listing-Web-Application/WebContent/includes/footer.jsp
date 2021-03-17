@@ -16,7 +16,7 @@
 		</div>
 	</div>
 </div>
+<p class="bg-dark text-white" style="text-align: center; padding: 10px;">This is footer Dialog</p>
 </footer>
-
 </body>
 </html>
