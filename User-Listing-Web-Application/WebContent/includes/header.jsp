@@ -48,3 +48,13 @@
 			</nav>
 		</div>
 	</div>
+	
+	<!-- Navbar with Image -->
+	
+	<nav class="navrbar navbar-expand-lg">
+	<a class="navbar-brand text-dark" href="#"> Lonely Developers </a>
+	
+		<div class="">
+		</div>
+	
+	</nav>
