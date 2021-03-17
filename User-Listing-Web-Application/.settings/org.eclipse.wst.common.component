@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="User-Listing-Web-Application">
+                
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+                
+        <property name="java-output-path" value="/User-Listing-Web-Application/build/classes"/>
+        <property name="context-root" value="User-Listing-Web-Application"/>
+            
+    </wb-module>
+    
+</project-modules>
