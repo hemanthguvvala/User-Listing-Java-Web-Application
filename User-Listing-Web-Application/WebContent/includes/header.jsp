@@ -52,11 +52,19 @@
 	<!-- Navbar with Image -->
 	
 	<nav class="navrbar navbar-expand-lg">
-	<a class="navbar-brand text-dark" href="#"> <img src="assets/header_icon.png" class="d-inline-block align-top" width="100px" height="100px">
-	
-	 Lonely Developers  </a>
-	
-		<div class="">
+		<a class="navbar-brand text-dark" href="#"> 
+			<img src="assets/header_icon.png" class="align-center" width="100px" height="100px">
+				Lonely Developers
+		 </a>
+	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+	 			 aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="" class="nav-link">Home</a>
+				</li>
+			</ul>
 		</div>
-	
 	</nav>
