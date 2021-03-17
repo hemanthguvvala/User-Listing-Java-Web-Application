@@ -40,6 +40,10 @@
 						<i class="bi bi-instagram text-danger"></i> 
 						<a class="text-secondary" style="margin-left: 5px;">Instagram</a>
 					</li>
+					<li class="nav-items" style="margin-right:10px;">
+						<i class="bi bi-github text-white"></i> 
+						<a class="text-secondary" style="margin-left: 5px;">Github</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
