@@ -52,7 +52,9 @@
 	<!-- Navbar with Image -->
 	
 	<nav class="navrbar navbar-expand-lg">
-	<a class="navbar-brand text-dark" href="#"> Lonely Developers </a>
+	<a class="navbar-brand text-dark" href="#"> <img src="assets/header_icon.png" class="d-inline-block align-top" width="100px" height="100px">
+	
+	 Lonely Developers  </a>
 	
 		<div class="">
 		</div>
