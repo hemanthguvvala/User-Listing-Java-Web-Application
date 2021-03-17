@@ -18,8 +18,14 @@
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 <title>${param.title}</title>
+
+<style type="text/css">
+.hr1 {
+	width: 90%;
+}
+</style>
 </head>
-<body>
+<body style="font-family: cursive;">
 	<div class="topbar topbar-dark bg-dark">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg">
@@ -51,20 +57,37 @@
 	
 	<!-- Navbar with Image -->
 	
-	<nav class="navrbar navbar-expand-lg">
-		<a class="navbar-brand text-dark" href="#"> 
-			<img src="assets/header_icon.png" class="align-center" width="100px" height="100px">
-				Lonely Developers
-		 </a>
-	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-	 			 aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a href="" class="nav-link">Home</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<nav class="navbar navbar-expand-lg navbar-light">
+        <a class="nav-link navbar-brand align-center" href="#">
+        	<img src="assets/header_icon.png" width="100px" height="100px;"> 
+        	<span class="align-center">Lonely Developers</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" 
+       			 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-items">
+                    <a class="nav-link active" href="">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="">login</a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="">Documents</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+            	<input class="form-control" type="search" placeholder="Search here..." name="search">
+            	<input class="btn btn-dark" type="submit" value="Search">
+            </form>
+        </div>
+    </nav>
+    
+    <hr class="hr1">
+    <p style="text-align: center;">#Do you know that this is sticky bar but not implemented with some features</p>
+    
