@@ -1,4 +1,5 @@
 <%@ include file="includes/header.jsp"%>
+ <p style="text-align: center;">#Do you know that this is sticky bar but not implemented with some features</p>
 <div class="container">
 	<div class="jumbotron">
 		<h4 style="text-align:center;">Oops.. my Ad goes here..</h4>
@@ -11,12 +12,14 @@
 			<div class="row">
 				<div class="col-md-8">
 					<a href="#" class="text-dark" style="text-decoration: none;">
-						<div class="card">
+						<div class="card" >
 							<img src="assets/wow.png" class="img-fluid">
-							<div class="card-body">
-								<h5 class="card-title">I'm Done Here</h5>
-								<p class="card-text">I donw writing lot's of coding and messed with some seppelling and you want more from me how?</p>
-							</div>
+								<div class="card-body">
+									<h5 class="card-title">I'm Done Here</h5>
+									<p class="card-text">I donw writing lot's of coding and messed with some 
+										seppelling and you want more from me how?
+									</p>
+								</div>
 						</div>
 					</a>
 				</div>
@@ -39,6 +42,7 @@
 								<h5 class="card-title">Are you Preparing coffee?</h5>
 								<p class="card-text">I brain was saying that stop it now it's 11:59 pm and you are 
 								coding still f*ck i;m of you =r head. </p>
+								<a href="" style="width: 200px; margin-top: 5px;">Wanna More</a>
 							</div>
 						</div>
 					</a>
@@ -56,6 +60,7 @@
 					</a>
 				</div>
 			</div>
+			<span style="width: 100px; margin:10px auto; padding:10px;" class="badge-pill badge badge-info">View More <i class="bi bi-arrow-right"></i></span>
 		</div>
 		<div class="col-md-3">
 		<a href="#" class="text-dark" style="text-decoration: none;">
@@ -81,6 +86,32 @@
 					Sadness<span class="badge badge-secondary badge-pill">5</span>
 				</li>
 			</ul>
+			<div class="container" style="padding:10px;">
+				<span style="padding:7px; margin:5px;" class="badge badge-pill badge-primary">Primary</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-secondary">Secondary</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-success">Success</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-danger">Danger</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-warning">Warning</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-info">Info</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-light">Light</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-dark">Dark</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-primary">Primary</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-secondary">Secondary</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-success">Success</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-danger">Danger</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-warning">Warning</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-info">Info</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-light">Light</span>
+				<span style="padding:7px;  margin:5px;" class="badge badge-pill badge-dark">Dark</span>
+			</div>
+		</div>
+	</div>
+	<div class="container" >
+		<div class="jumbotron bg-warning" style="text-align: center;" >
+			<blockquote class="blockquote">
+				<p class="mb-0">Life is like Water, you can pour that in any form and utilize at your will</p>
+				 <footer class="blockquote-footer">Hemanth Kumar <cite title="Source Title">Guvvala</cite></footer>
+			</blockquote>
 		</div>
 	</div>
 </div>

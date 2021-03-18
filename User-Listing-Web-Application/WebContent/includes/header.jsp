@@ -17,7 +17,15 @@
 	crossorigin="anonymous"></script>
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-<title>${param.title}</title>
+<title>
+	<%
+		if(request.getAttribute("title")==null){
+			out.print("Lonely Developers");
+		}else {
+			request.getAttribute("title");
+		}
+	%>
+</title>
 
 <style type="text/css">
 .hr1 {
@@ -58,7 +66,7 @@
 	<!-- Navbar with Image -->
 	
 	<nav class="navbar navbar-expand-lg navbar-light">
-        <a class="nav-link navbar-brand align-center" href="#">
+        <a class="nav-link navbar-brand align-center" href="${pageContext.request.contextPath }/site?page=home">
         	<img src="assets/header_icon.png" width="100px" height="100px;"> 
         	<span class="align-center">Lonely Developers</span>
         </a>
@@ -69,16 +77,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-items">
-                    <a class="nav-link active" href="">Home</a>
+                    <a class="nav-link active" href="${pageContext.request.contextPath }/site?page=home">Home</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath }/operations?page=userlist">Users Listing</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="">login</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath }/operations?page=adduser">Add Users</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="">Documents</a>
+                    <a class="nav-link" href="">Images</a>
                 </li>
             </ul>
             <form class="form-inline">
@@ -89,5 +97,3 @@
     </nav>
     
     <hr class="hr1">
-    <p style="text-align: center;">#Do you know that this is sticky bar but not implemented with some features</p>
-    

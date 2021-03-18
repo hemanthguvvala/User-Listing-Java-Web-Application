@@ -1,12 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@ include file="includes/header.jsp" %>
+<div class="container" style="padding:10px;">
+	<p>Some thing going wrong here</p>
+</div>
+<%@ include file="includes/footer.jsp" %>
