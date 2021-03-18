@@ -1,11 +1,19 @@
 package com.hkgroups.controllers;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.Resource;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.sql.DataSource;
+
+import com.hkgroups.adapter.UsersAdapter;
+import com.hkgroups.dataresources.UsersData;
 
 /**
  * Servlet implementation class Operations
@@ -13,10 +21,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/operations")
 public class Operations extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * @see HttpServlet#HttpServlet()
-	 */
+	@Resource(name="jdbc/project")
+	private DataSource dataSource;
+	
 	public Operations() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -46,6 +53,9 @@ public class Operations extends HttpServlet {
 	}
 
 	private void userlists(HttpServletResponse response, HttpServletRequest request) throws ServletException, IOException {
+		List<UsersData> userlist = new ArrayList<UsersData>();
+		userlist = new UsersAdapter().dataList(dataSource);
+		request.setAttribute("userlist", userlist);
 		request.setAttribute("Users Data List", "title");
 		request.getRequestDispatcher("userlisting.jsp").forward(request, response);
 		
