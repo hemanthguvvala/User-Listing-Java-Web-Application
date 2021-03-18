@@ -22,13 +22,14 @@
 			out.print("<td>" + userlist.get(i).getUser_last_name() + "</td>");
 			out.print("<td>" + userlist.get(i).getUser_email() + "</td>");
 			out.print("<td>" + userlist.get(i).getGender() + "</td>");
-		%>
-		<td><a href="">Update</a></td>
-		<td><a href="">Delete</a></td>
-		<%
+			updateUrl = request.getContextPath()+"/operations?page=updateuser&userid="+userlist.get(i).getUser_id()+"&userfirstname="+userlist.get(i).getUser_first_name()+
+					"&userlastname="+userlist.get(i).getUser_last_name()+"&useremail="+userlist.get(i).getUser_email();
+			deleteUrl = request.getContextPath()+"/operations?page=deleteuser&userid="+userlist.get(i).getUser_id();
+			out.print("<td><a href="+updateUrl+">Update</a></td>");
+			out.print("<td><a onClick='if(!Confirm('Are you sure my little heart?')) return false;' href="+deleteUrl+">Delete</a></td>");
+			out.print("</tr>");
 		}
 		%>
-		</tr>
 	</table>
 </div>
 <%@ include file="includes/footer.jsp"%>

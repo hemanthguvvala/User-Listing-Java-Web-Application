@@ -16,7 +16,7 @@
 						<input  class="form-input" type="radio" name="gender" value="Female"> Female
 					</div>
 			</div>
-				
+				<input type="hidden" value="adduser" name="form">
 			<input type="submit" value="Add User" class="btn btn-dark">
 		</form>
 	</div>
