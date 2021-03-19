@@ -86,7 +86,7 @@
                     <a class="nav-link" href="${pageContext.request.contextPath }/operations?page=adduser">Add Users</a>
                 </li>
                 <li class="nav-items">
-                    <a class="nav-link" href="">Images</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath }/imagecontroller?action=imagedatalist"">Images</a>
                 </li>
             </ul>
             <form class="form-inline">

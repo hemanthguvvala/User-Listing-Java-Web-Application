@@ -20,5 +20,10 @@
 			<input type="submit" value="Add User" class="btn btn-dark">
 		</form>
 	</div>
+	
+	<form action="${pageContext.request.contextPath }/imagecontroller?action=filesupload" enctype="multipart/form-data" method="post">
+		<input type="file" name="files" multiple="multiple">
+		<input type="submit" value="Upload Images">
+	</form>
 </div>
 <%@ include file="includes/footer.jsp"%>
